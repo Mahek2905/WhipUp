@@ -44,9 +44,9 @@ export default function Body() {
     const [ recipes, setRecipes ] = useState([]);
     const [ bulkInfo, setBulkInfo ] = useState([]);
 
-    const apiKey1 = import.meta.env.VITE_SPOONACULAR_API_KEY;
-    const apiKey2 = import.meta.env.VITE_SPOONACULAR_API_KEY1;
-    const apiKey3 = import.meta.env.VITE_SPOONACULAR_API_KEY2;
+    const apiKey1 = import.meta.env.VITE_SPOONACULAR_API_KEY1;
+    const apiKey2 = import.meta.env.VITE_SPOONACULAR_API_KEY2;
+    const apiKey3 = import.meta.env.VITE_SPOONACULAR_API_KEY3;
     const SPOONACULAR_KEYS = [
         apiKey1,
         apiKey2,
