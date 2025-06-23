@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*                      BASE STYLES                         */
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  html {
+    @apply text-[14px] leading-[1.6] font-sans scroll-smooth;
+  }
+
+  body {
+    @apply max-w-[100vw] min-h-screen bg-[#fff9ed] text-gray-800;
+  }
+
+  #root {
+    @apply m-0 p-0 antialiased;
+  }
+}
+
+@layer components {
+
+  .card-headings {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #1F2937; /*text-gray-800*/
+  }
+  .list-items {
+    color: #374151; /*text-gray-700*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .bullets {
+    @apply h-6 w-6 mr-3 bg-orange-600 text-white text-sm font-medium rounded-full flex justify-center items-center;
+  }
+}
